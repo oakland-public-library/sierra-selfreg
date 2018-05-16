@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+  <head>
+    <title>Patron Self Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="/screens/selfreg_style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/screens/selfreg_style_print.css" media="print" />
+  </head>
+  <body>
+    <script src="/screens/jquery.min.js"></script>
+    <script src="/screens/shared_logic.js"></script>
+    <script src="/screens/token_data.js"></script>
+    <script src="/screens/selfregconfirm_logic.js"></script>
+    <div id="confirm_wrapper">
+    <div id="lang_select">
+      Language / 語言 / Idioma
+      <select id="lang">
+	<option value="eng">English</option>
+	<option value="spa">Español</option>
+	<option value="chi">中文</option>
+      </select>
+    </div>
+      <h2><span id="msg_confirm"></span></h2>
+      <p><span id="msg_date_registered"></span>
+	<script type="text/javascript">
+	  var currentTime = new Date()
+	  var month = currentTime.getMonth() + 1
+	  var day = currentTime.getDate()
+	  var year = currentTime.getFullYear()
+	  document.write(month + "/" + day + "/" + year)
+	</script>
+      </p>
+      <p><span id="msg_thanks"></span></p>
+      <h3>
+<!--{name}-->
+      </h3>
+      <span id="msg_confirm_note"></span>
+      <div id="bcTarget"></div>
+      <div class="confirm_button">
+	<input id="msg_button_print" type="button" class="button white" onclick="printpage();">
+	<input id="msg_start_over" class="button yellow" type="button" onclick="startover();">
+      </div>
+    </div>
+  </body>
+</html>
