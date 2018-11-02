@@ -124,14 +124,14 @@ tdata.pickup_note_adult = {
     chi:"請在填寫表格後三十日內，由本人帶同以下文件到附近圖書館分館領取你的圖書証:<ol><li>附有照片的身份証</li></ol>"
 };
 tdata.pickup_note_teen = {
-    eng:"Pick up your library card in person from your nearest library branch within 30 days of applying with your photo ID. If no ID is available, a parent/guardian signature on a <a href=\"http://www.oaklandlibrary.org/sites/default/files/uploads/OPL_Card_App_Eng_Teens_0.pdf\">paper application</a> is also acceptable.",
-    spa:"Recoja su tarjeta de la biblioteca en persona en su sucursal más cercano en los próximos 30 días y traiga identificación fotográfica. Si no tiene identificación es disponibles, padres de familia/ guardianes pueden firmar una <a>solicitud <a href=\"http://www.oaklandlibrary.org/sites/default/files/uploads/OPL_Card_App_Span_Teen.pdf\">solicitud en papel</a> que también se acepta.",
-    chi:"請在填寫表格後三十日內，帶同附有照片的身份証到附近圖書館分館領取你的圖書証。若不能提供身份証明文件，請填寫由家長/法定監護人簽名的<a href=\"http://www.oaklandlibrary.org/sites/default/files/uploads/OPL_Card_App_Eng_Teens_0.pdf\">書面申請表格</a>。"
+    eng:"Pick up your library card in person from your nearest library branch within 30 days of applying with your photo ID. If no ID is available, a parent/guardian signature on a <a href=\"http://oaklandlibrary.org/using-library/library-cards\">paper application</a> is also acceptable.",
+    spa:"Recoja su tarjeta de la biblioteca en persona en su sucursal más cercano en los próximos 30 días y traiga identificación fotográfica. Si no tiene identificación es disponibles, padres de familia/ guardianes pueden firmar una <a>solicitud <a href=\"http://oaklandlibrary.org/using-library/library-cards\">solicitud en papel</a> que también se acepta.",
+    chi:"請在填寫表格後三十日內，帶同附有照片的身份証到附近圖書館分館領取你的圖書証。若不能提供身份証明文件，請填寫由家長/法定監護人簽名的<a href=\"http://oaklandlibrary.org/using-library/library-cards\">書面申請表格</a>。"
 };
 tdata.pickup_note_child = {
-    eng:"Parent/Legal Guardian and child must both present themselves for the child to receive the card within 30 days of applying. Alternatively, you may print and fill out a <a href=\"http://oaklandlibrary.org/sites/default/files/uploads/children%27s%20library%20card%20application%20%28English%29%20%282-20-14%29.pdf\">paper application</a> for the child to receive a card without parent/legal guardian present.",
-    spa:"Padres de familia/ guardián y el niño tiene que presentase para recibir la tarjeta en los próximos 30 días. O, pueden imprimir y completar <a href=\"http://oaklandlibrary.org/sites/default/files/uploads/Children%27s%20Lilbrary%20Card%20Application%20-%20Spanish%20%282%29.pdf\">la solicitud</a> y el niño puede recibir su tarjecta sin que estén presente los padres/guardián.",
-    chi:"家長/法定監護人和孩子在填寫申請表格後三十日內，必須一同前往圖書館領取孩子的圖書証。家長/法定監護人亦可預先填寫<a href=\"http://oaklandlibrary.org/sites/default/files/uploads/Chinese%20-%20children%20%282%29.pdf\">書面申請表格</a>，讓孩子在沒有家長的陪同下仍可辨理申請手續。"
+    eng:"Parent/Legal Guardian and child must both present themselves for the child to receive the card within 30 days of applying. Alternatively, you may print and fill out a <a href=\"http://oaklandlibrary.org/using-library/library-cards\">paper application</a> for the child to receive a card without parent/legal guardian present.",
+    spa:"Padres de familia/ guardián y el niño tiene que presentase para recibir la tarjeta en los próximos 30 días. O, pueden imprimir y completar <a href=\"http://oaklandlibrary.org/using-library/library-cards\">la solicitud</a> y el niño puede recibir su tarjecta sin que estén presente los padres/guardián.",
+    chi:"家長/法定監護人和孩子在填寫申請表格後三十日內，必須一同前往圖書館領取孩子的圖書証。家長/法定監護人亦可預先填寫<a href=\"http://oaklandlibrary.org/using-library/library-cards\">書面申請表格</a>，讓孩子在沒有家長的陪同下仍可辨理申請手續。"
 };
 tdata.required = {
     eng:"required field",
