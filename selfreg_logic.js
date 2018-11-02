@@ -9,6 +9,20 @@
 //    - calls postproc_form() to transform data to iii field format
 //    - returns true to allow http POST, otherwise fails
 
+
+function test_form(t) {
+    if (t === 'child') {
+        window.age_range = 2
+        show_form("#child_form");
+    } else if (t === 'teen') {
+        window.age_range = 3
+        show_form("#teen_form");
+    } else if (t === 'adult') {
+        window.age_range = 4
+        show_form("#adult_form");
+    }
+}
+
 // require teens and adults to submit an ID card number?
 var require_id_teen_adult = false;
 
@@ -67,6 +81,13 @@ $(document).ready(function() {
 
     // replace all string tokens with those of current language
     replace_language();
+
+    // use fixed values for testing
+    const params = new URLSearchParams(window.location.search);
+    const t = params.get('test');
+    if (t) {
+        test_form(t);
+    }
 });
 
 // validate user input in age fields when user clicks submit
