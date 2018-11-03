@@ -493,7 +493,7 @@ function show_form(form_id) {
         set_required(["#last_name", "#first_name",
                       "#home_address", "#home_city", "#home_zip", "#phone",
                       "#guardian_last_name", "#guardian_first_name",
-                      "#email", "#id_number", "#agreement_box"]);
+                      "#email", "#agreement_box"]);
         break;
     case 4:
         log("displaying adult form");
@@ -504,7 +504,7 @@ function show_form(form_id) {
         set_required(["#last_name", "#first_name",
                       "#home_address", "#home_city", "#home_zip", "#phone",
                       "#guardian_last_name", "#guardian_first_name",
-                      "#email", "#id_number", "#agreement_box"]);
+                      "#email", "#agreement_box"]);
         break;
     }
     $(".required").show(250);
@@ -608,32 +608,6 @@ function log(m) {
 
 function toTitleCase(str) {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-}
-
-function acceptable_id() {
-    a = ["Driver's License",
-         "State Issued ID Card",
-         "Student ID Card",
-         "Permanent Resident Card",
-         "Matricula Consular ID Card",
-         "Oakland City ID/Municipal City ID",
-         "Passport"];
-    if (window.age_range == 2) {
-        who = "children";
-    }
-    if (window.age_range == 3) {
-        who = "teenagers";
-    }
-    if (window.age_range == 4) {
-        who = "adults";
-    }
-    s = "<div><h3>Acceptable I.D. for " + who + " includes:</h3><ul>";
-    for (i=0; i<a.length; i++) {
-        s = s + "<li>" + a[i] + "</li>";
-    }
-    s = s + "</ul><br /></div><div style=\"text-align:center\">" +
-        "<button onclick=\"lightbox_close();\">Close</button></div>";
-    return s;
 }
 
 function lightbox_open(s) {

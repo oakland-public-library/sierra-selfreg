@@ -234,39 +234,49 @@ tdata.ident_note = {
     chi:"你可選擇使用任何一種身份証明文件申請圖書証。請點擊以下按鈕，然後輸入証件上的號碼。若你所持的証件這裡没有列出，請向圖書館職員查詢。"
 };
 tdata.drivers_license = {
-    eng:"Driver's License",
-    spa:"Licencia de Conducir",
-    chi:"駕駛執照 "
+    eng:"Valid State Driver's License / Identification Card",
+    spa:"",
+    chi:""
+};
+tdata.city_id = {
+    eng:"Photo ID Transit Card / City ID",
+    spa:"",
+    chi:""
+};
+tdata.registered_mail = {
+    eng:"First Class mail addressed to you (post-marked within the last 30 days)",
+    spa:"",
+    chi:""
 };
 tdata.resident_card = {
     eng:"Permanent Resident Card",
     spa:"Tarjeta Verde ( tarjeta de residencia permanente)",
     chi:"永久居民身份証 "
 };
-tdata.state_id = {
-    eng:"State Issued ID Card",
-    spa:"Identificación Estatal",
-    chi:"州政府簽發身份証  "
-};
 tdata.matricula = {
     eng:"Matricula Consular ID Card",
     spa:"Matricula Consular",
     chi:"駐美墨西哥領事館簽發身份証  "
 };
-tdata.city_id = {
-    eng:"Oakland City ID/Municipal City ID",
-    spa:"Identificación de la Ciudad de Oakland",
-    chi:"屋崙市/或其他市政府簽發身份証  "
+tdata.passport = {
+    eng:"Social Security Card / Passport",
+    spa:"",
+    chi:""
+};
+tdata.medical_id = {
+    eng:"Current medical identification card",
+    spa:"",
+    chi:""
 };
 tdata.student_id = {
-    eng:"Student ID Card",
-    spa:"Identificación Escolar",
-    chi:"學生証 "
+    eng:"School ID",
+    spa:"",
+    chi:""
 };
-tdata.passport = {
-    eng:"Passport",
-    spa:"Pasaporte",
-    chi:"護照 "
+tdata.report_card = {
+    eng:"Teens only: Report Card / Homework",
+    spa:"",
+    chi:""
 };
 tdata.ident_number = {
     eng:"ID Number",
@@ -289,9 +299,9 @@ tdata.agreement_note_child = {
     chi:"作為家長/監護人我明白及同意<br/><ul><li>圖書館只發証給我的孩子，只有我的孩子才能使用這張圖書証。</li><li>圖書館容許孩子從任何部份借出任何物件。即使在本人的要求下，圖書館不能限制孩子借出書本及電影的種類。</li><li>孩子的資料保密與本人一樣是受加州私隱權法例保障的。除物件有罰款以外, 圖書館不可向我透露孩子借出的任何資料。</li><li>遺失及損壞物件均需繳付費用。本人同意對孩子借出的一切物件負責，並擔負所有過期罰款及任何損壞費用。</li><li>我的孩子可在圖書館內使用電腦。圖書館不會監察孩子在網上查閱的任何資料。</li><li>若我的孩子年齡是八歲以下，必須時刻由家長或保姆監督，絶不可以單獨逗留在圖書館內。</li></ul>"
 };
 tdata.agree = {
-    eng:"I agree to follow all library rules.",
-    spa:"Yo acepto seguir todas las reglas.",
-    chi:"本人同意遵守所有圖書館的規定"
+    eng:"I acknowledge the above.",
+    spa:"",
+    chi:""
 };
 tdata.submit_error = {
     eng:"Error Submitting Form",
