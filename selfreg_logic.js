@@ -437,7 +437,7 @@ function postproc_form() {
     field.type = "hidden";
     switch(window.age_range) {
     case 1:
-        field.value = "8"; // child (0-7)
+        field.value = "0"; // child (0-7)
         break;
     case 2:
         field.value = "3"; // child (8-12)
