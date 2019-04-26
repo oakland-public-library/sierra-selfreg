@@ -135,7 +135,7 @@ function classify_age(birth_date) {
         log("patron age negative? treat as parsing error");
         alert("Date entered is in the future. Are you a time traveler?");
         return 0;
-    } else if (age < 5) {
+    } else if (age < 8) {
         log("classified as a younger child patron");
         return 1;
     } else if (age < 13) {
