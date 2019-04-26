@@ -19,9 +19,9 @@ tdata.header_teen = {
     chi:"青少年圖書証申請表"
 };
 tdata.header_child = {
-    eng:"Child Library Card Registration (ages 5-12)",
+    eng:"Child Library Card Registration (ages 0-12)",
     spa:"Registro Para Tarjeta Infantil de la Biblioteca",
-    chi:"兒童圖書証申請表  ( 5 - 12 歲)"
+    chi:"兒童圖書証申請表  ( 0 - 12 歲)"
 };
 tdata.month = {
     eng:"Month",
@@ -404,7 +404,7 @@ tdata.thanks = {
     chi:"謝謝你的申請!"
 };
 tdata.confirm_note = {
-    eng:"<p>Thanks for registering with Oakland Public Library. Please <strong>print this confirmation</strong>, if you haven't done so at registration, and bring it with you to any Oakland Public Library within 30 days to pick up your card.</p><p>For children (ages 5-12), a parent/Legal Guardian and child must both present for the child to receive the card.</p><p>If you did not register at Oakland Public Library, please contact us at (510)238-3144.</p>",
+    eng:"<p>Thanks for registering with Oakland Public Library. Please <strong>print this confirmation</strong>, if you haven't done so at registration, and bring it with you to any Oakland Public Library within 30 days to pick up your card.</p><p>For children (ages 0-12), a parent/Legal Guardian and child must both present for the child to receive the card.</p><p>If you did not register at Oakland Public Library, please contact us at (510)238-3144.</p>",
     spa:"<p>Favor de<strong>imprimir esta confirmación</strong> y llévela con sus documentos cualquier sucursal de la Biblioteca Publica de Oakland durante los próximos 30 días para recibir su tarjeta:</p><p>Niños menores de 13 años de edad, el padre/guardian y el niño tiene que estar presente para recibir la tarjeta.</p>",
     chi:"<p>請<strong>打印此確認​</ strong>，在填寫表格後三十日內，帶同以下文件到附近圖書館分館領取你的圖書証：</p><ul><li>附有照片的身份證</li></ul><p>13歲以下兒童，父母/法定監護人和孩子都必須親身領取孩子的圖書証</p>"
 };

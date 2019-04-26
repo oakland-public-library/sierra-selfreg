@@ -105,7 +105,7 @@ function try_birthdate() {
         // couldn't parse. TODO: direct patron to staff
         break;
     case 1:
-        // too young. TODO: direct patron to staff
+        show_form("#child_form");
         break;
     case 2:
         show_form("#child_form");
@@ -135,6 +135,9 @@ function classify_age(birth_date) {
         log("patron age negative? treat as parsing error");
         alert("Date entered is in the future. Are you a time traveler?");
         return 0;
+    } else if (age < 5) {
+        log("classified as a younger child patron");
+        return 1;
     } else if (age < 13) {
         log("classified as a child patron");
         return 2;
@@ -239,7 +242,7 @@ function validate_form() {
         }
     }
     // children only
-    if (window.age_range == 2) {
+    if ((window.age_range == 1)|(window.age_range == 2)) {
         if (has_phone == false) {
             // Children aren't asked for email, so without a phone number
             // entered, the form is invalid
@@ -394,7 +397,7 @@ function postproc_form() {
         form.appendChild(field);
     }
     // children only: transform identification
-    if (window.age_range == 2) {
+    if ((window.age_range == 1)|(window.age_range == 2)) {
         // no unique ID is gathered from a child's user info, but since
         // millennium still needs a unique value if duplicate ID checking
         // is enabled, we create a dummy value based on a timestamp
@@ -414,7 +417,7 @@ function postproc_form() {
         field.value = "|t " + t;
     }
     // children only: transform parent/guardian info
-    if (window.age_range == 2) {
+    if ((window.age_range == 1)|(window.age_range == 2)) {
         // school
         if (form.elements["school"].value != "") {
             s = "|s " + form.elements["school"].value.toUpperCase() + " ";
@@ -433,8 +436,11 @@ function postproc_form() {
     field.name = "F044pcode1";
     field.type = "hidden";
     switch(window.age_range) {
+    case 1:
+        field.value = "8"; // child (0-7)
+        break;
     case 2:
-        field.value = "3"; // child
+        field.value = "3"; // child (8-12)
         break;
     case 3:
         field.value = "2"; // teen
@@ -467,6 +473,7 @@ function show_form(form_id) {
     $("#agreement_box").show();
     $("#footer").show();
     switch (window.age_range) {
+    case 1:
     case 2:
         log("displaying child form");
         $("#header_child").show();
