@@ -246,7 +246,17 @@ function validate_form() {
         if (has_phone == false) {
             // Children aren't asked for email, so without a phone number
             // entered, the form is invalid
-            add_error("#phone", "phone");
+            add_error("#phone", "error_phone");
+        }
+        // guardian last name
+        s = $('input[name=guardian_last_name]').val()
+        if (s.length == 0) {
+            add_error("#guardian_last_name", "error_last_name");
+        }
+        // guardian first name
+        s = $('input[name=guardian_first_name]').val()
+        if (s.length == 0) {
+            add_error("#guardian_first_name", "error_first_name");
         }
     }
     // agreement
@@ -418,10 +428,16 @@ function postproc_form() {
     }
     // children only: transform parent/guardian info
     if ((window.age_range == 1)|(window.age_range == 2)) {
+        // // parent / guardian name
+        pgname = form.elements["guardian_last_name"].value;
+        pgname += "," + form.elements["guardian_first_name"].value;        
+        if (form.elements["guardian_middle_initial"].value != "") {
+            pgname += "," + form.elements["guardian_middle_initial"].value;
+        }
+        field.value += "|p " + pgname.toUpperCase() + " ";
         // school
         if (form.elements["school"].value != "") {
-            s = "|s " + form.elements["school"].value.toUpperCase() + " ";
-            field.value = field.value + s;
+            field.value += "|s " + form.elements["school"].value.toUpperCase() + " ";
         }
     }
     // transform language preference
@@ -480,8 +496,6 @@ function show_form(form_id) {
         $("#form_child").show();
         $("#form_child").children().show();
         $("#agreement_child").show();
-        $("#guardian_wrapper").show();
-        $("#guardian_wrapper").children().show();
         set_required(["#last_name", "#first_name",
                       "#home_address", "#home_city", "#home_zip", "#phone",
                       "#guardian_last_name", "#guardian_first_name",

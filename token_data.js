@@ -214,7 +214,7 @@ tdata.pref_lang_note = {
     chi:"若你選擇閱讀英文以外的語文，請在這裏填寫"
 };
 tdata.parent_info = {
-    eng:"Parent/Guardian Identification",
+    eng:"Parent/Guardian Name",
     spa:"Padre / Guardia",
     chi:"家長/法定監護人資料"
 };
