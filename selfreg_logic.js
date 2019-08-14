@@ -434,7 +434,7 @@ function postproc_form() {
         if (form.elements["guardian_middle_initial"].value != "") {
             pgname += "," + form.elements["guardian_middle_initial"].value;
         }
-        field.value += "|p " + pgname.toUpperCase() + " ";
+        field.value += "|n " + pgname.toUpperCase() + " ";
         // school
         if (form.elements["school"].value != "") {
             field.value += "|s " + form.elements["school"].value.toUpperCase() + " ";
