@@ -114,9 +114,9 @@ tdata.start_over = {
     chi:"重新開始"
 };
 tdata.disability_note = {
-    eng:"If you have a disability, ask Library staff for an Extended Services form.",
-    spa:"Si usted es una persona con discapacidades, pida  la SOLICITUD de Servicios Extra Para Usuarios con Discapacidades.",
-    chi:"如果你是殘障人士，請向圖書館職員索取殘障讀者專用特別服務申請表。"
+    eng:"If you have a disability, you may ask library staff to offer you Extended Services.",
+    spa:"Si tiene una discapacidad, puede pedir al personal que le ofrezcan servicios adicionales.",
+    chi:"如果您是残障人士，您可以要求图书馆工作人员为您提供残障读者专用图书卡。"
 };
 tdata.pickup_note_adult = {
     eng:"Pick up your library card in person from your nearest branch within 30 days of applying with the following documents:<ol><li>Photo ID</li></ol>",
